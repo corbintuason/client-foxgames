@@ -1,0 +1,13 @@
+.navigation-bar{
+    background-color: black
+}
+
+#user-avatar{
+    width: 10%
+}
+
+@media (min-width: 1500px) {
+    .container{
+        max-width: 1500px;
+    }
+}

@@ -1,0 +1,16 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@media (min-width: 1500px) {
+    .container{
+        max-width: 1500px;
+    }
+}
+
+.btn-add-to-cart{
+    border-style: solid;
+    border-color: orange
+}
+
+.btn-add-to-cart:hover{
+    background-color: orange;
+    color: white
+}

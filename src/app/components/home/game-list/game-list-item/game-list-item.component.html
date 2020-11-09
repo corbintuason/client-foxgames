@@ -1,0 +1,15 @@
+<div class="card mb-4 box-shadow" (click)="openModal()">
+  <img class="card-img-top game-image" [src]="game.img_url" data-holder-rendered="true">
+  <div class="card-body">
+    <div class="row">
+      <div class="col">
+        <small class="card-title" style="font-weight: bold;">{{game.name}}</small>
+
+      </div>
+    </div>
+    <small class="card-text">{{ game.price | currency: "PHP"}}</small>
+    <div class="row">
+      <button class="btn btn-outline-secondary btn-block" [routerLink]="['/game', game._id]"> Go to Product Page </button>
+    </div>
+  </div>
+</div>

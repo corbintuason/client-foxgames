@@ -1,0 +1,29 @@
+<div class="dropdown mt-2">
+    <fa-icon [icon]="faShoppingCart" class="shopping-cart "></fa-icon>
+    <span style="color:orange">{{total_quantity}}</span>
+
+    <div class="shopping-cart-content">
+        <div class="card" style="width: 40rem;">
+            <div class="card-body" style="padding:0">
+              <div *ngIf="items.length == 0" class="alert alert-danger" role="alert">
+                You have not added anything in your cart yet!
+              </div>             
+              <ul *ngIf="items.length > 0" class="list-group">
+                <app-shopping-cart-item *ngFor="let item of items" class="shopping-cart-item" [item]="item"></app-shopping-cart-item>
+              </ul>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="row container">
+                  <div class="col-md-12">
+                    <strong class="float-right">Total Items: {{ total_quantity}} </strong><br>
+
+                  </div>
+                  <div class="col-md-12">
+                    <strong class="float-right" style="color:orange">Total:                   {{ total | currency: "PHP" }}
+                    </strong>  
+                  </div>
+                </div>
+            </a>      
+            </div>
+          </div>
+    </div>
+</div>
