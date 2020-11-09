@@ -14,10 +14,10 @@ FOXGames - Client is an Angular project developed for Edamama Philippines. Below
 - Create a SIMPLE WEB APPLICATION with the following constraints and requirements. Checked boxes indicate a finished feature:
 
     - Required:
-        - [x]  List All Products
-        -[x] View Product
+        - [x] List All Products
+        - [x] View Product
     - Optional:
-        -[x] Add To Cart
-        -[x]Product Search Engine
+        - [x] Add To Cart
+        - [x] Product Search Engine
 
 
